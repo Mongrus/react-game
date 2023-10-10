@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/react-game/static/css/main.0d239e30.css",
+    "main.js": "/react-game/static/js/main.332490df.js",
+    "static/js/845.6d46cffa.chunk.js": "/react-game/static/js/845.6d46cffa.chunk.js",
+    "static/media/sound.mp3": "/react-game/static/media/sound.433c3cdd10f3b14eadf6.mp3",
+    "static/media/goodFinal.mp3": "/react-game/static/media/goodFinal.99a509d97725481ea319.mp3",
+    "static/media/badFinal.mp3": "/react-game/static/media/badFinal.9dcb747cb8659a6cd635.mp3",
+    "static/media/badFinal.webp": "/react-game/static/media/badFinal.d27bdd5f413f9ba551d3.webp",
+    "static/media/lastTextBot.mp3": "/react-game/static/media/lastTextBot.c423c755f448ba3e5253.mp3",
+    "static/media/goodFinal.webp": "/react-game/static/media/goodFinal.894028117c875413affb.webp",
+    "static/media/robot.webp": "/react-game/static/media/robot.3588325f78cf3e8a7e18.webp",
+    "static/media/badRobotFinal.mp3": "/react-game/static/media/badRobotFinal.f0b324f639a4d45932b2.mp3",
+    "static/media/deadBot.mp3": "/react-game/static/media/deadBot.2032f736cec692ac66fd.mp3",
+    "static/media/badRobotMainText.mp3": "/react-game/static/media/badRobotMainText.b5afd5a280d206e93367.mp3",
+    "static/media/botMainText.mp3": "/react-game/static/media/botMainText.d04554812182e0c2046a.mp3",
+    "static/media/mainButton.mp3": "/react-game/static/media/mainButton.358bc87e3ae15633d8f7.mp3",
+    "static/media/soundButton.mp3": "/react-game/static/media/soundButton.e1ffd2e4262dfbca0d4c.mp3",
+    "index.html": "/react-game/index.html",
+    "main.0d239e30.css.map": "/react-game/static/css/main.0d239e30.css.map",
+    "main.332490df.js.map": "/react-game/static/js/main.332490df.js.map",
+    "845.6d46cffa.chunk.js.map": "/react-game/static/js/845.6d46cffa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d239e30.css",
+    "static/js/main.332490df.js"
+  ]
+}
