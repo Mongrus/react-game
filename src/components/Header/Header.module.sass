@@ -1,0 +1,78 @@
+.header
+    display: flex
+    flex-direction: row
+    justify-content: space-evenly
+    align-items: center
+    background-color: DarkCyan
+    height: 16rem
+    h3
+        font-size: 3rem
+        text-decoration: underline
+    h2
+        font-size: 4rem
+
+.headerFinalButtle
+    background-color: black
+    animation: finalButtle 7s linear infinite
+    color: white
+    h3
+        text-decoration: line-through
+        text-decoration-color: Red
+
+.headerFinal
+    background-color: DarkCyan
+    animation: Final 7s linear infinite
+    height: 16rem
+    h3
+        font-size: 3rem
+        text-decoration: underline
+    h2
+        font-size: 4rem
+
+.playerInfo
+    display: flex
+    flex-direction: row
+    justify-content: space-evenly
+    align-items: center
+    img
+        border: .5rem solid black
+        border-radius: 1rem
+        background-color: SeaGreen
+        width: 12rem
+        height: 12rem
+        margin: 1rem
+    &:hover
+        img
+            width: 13rem
+            height: 13rem
+            transform: translateY(-.3rem)
+            transition: 1s
+
+.playerInfoFinalButtle
+    img
+        filter: blur(2px) grayscale(80%)
+    
+.playerInfoFinal
+    img
+        filter: none
+
+
+@keyframes finalButtle
+    0%
+        border-bottom: 1rem solid red
+    50%
+        border-bottom: 1rem solid black
+    100%
+        border-bottom: 1rem solid red
+
+@keyframes Final
+    0%
+        border-bottom: 1rem solid violet
+    25%
+        border-bottom: 1rem solid green
+    50%
+        border-bottom: 1rem solid blue
+    75%
+        border-bottom: 1rem solid yelow
+    100%
+        border-bottom: 1rem solid violet

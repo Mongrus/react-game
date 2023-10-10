@@ -1,0 +1,62 @@
+.badFinal
+    background: url(../../img/badFinal.webp) no-repeat center center
+    background-size: 100vw 80rem
+    height: 1fr
+    display: flex
+    justify-content: center
+    align-items: center
+
+.badFinalDiv
+    background: linear-gradient(223deg, rgba(0, 0, 0, 0.672) 0%, rgba(167, 42, 0, 0.602) 100%)
+    width: 80rem
+    height: 50rem
+    h2
+        padding: 4rem
+        font-size: 3.3rem
+        color: Silver
+        text-shadow: black .3rem .3rem 0
+
+
+.goodFinal
+    position: relative
+    background: url(../../img/goodFinal.webp) no-repeat center center
+    height: 60rem
+    display: flex
+    justify-content: center
+    align-items: center
+    
+
+.goodFinalDiv
+    background: linear-gradient(223deg, rgba(42, 66, 25, 0.705) 0%, rgba(17, 58, 55, 0.633) 100%)
+    width: 80rem
+    height: 40rem
+    border-radius: 1.5rem
+    padding: 7rem 3rem 3rem 3rem
+    h2
+        font-size: 3.5rem
+        color: white
+        text-shadow: .3rem .3rem 1rem black
+
+.textBot
+    padding: 1rem
+    font-size: 2rem
+    width: 42rem
+    background-color: white
+    border: .3rem solid black
+    border-radius: 0 2rem 2rem 2rem
+    position: absolute
+    top: -7.5rem
+    left: 19rem
+    p
+        animation: textVisibility 3s ease-out 
+    &:hover
+        width: 45rem
+        transition: 1s
+        font-size: 2.3rem
+        transition: 1s
+
+@keyframes textVisibility
+    0%
+        opacity: 0
+    100%
+        opacity: 1

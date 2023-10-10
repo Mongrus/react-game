@@ -1,0 +1,56 @@
+.raundTwo
+    height: 1fr
+    background-color: LightSkyBlue
+    display: flex
+    justify-content: center
+    h3
+        font-size: 3rem
+    h4
+        padding: .5rem
+        font-size: 2.5rem
+    p
+        padding: 1.2rem
+        font-size: 2rem
+    img
+        width: 25rem
+        height: 25rem
+
+.userInfo
+    position: relative
+    margin: 3rem
+    padding: .5rem
+    background-color: Lavender
+    border: 1rem solid indigo
+    border-radius: 5rem 1rem 5rem 1rem
+    width: 40rem
+    height: 53rem
+
+.textBot
+    padding: 1rem
+    font-size: 2rem
+    width: 35rem
+    background-color: white
+    border: .3rem solid black
+    border-radius: 2rem 2rem 2rem 0
+    position: absolute
+    right: -17rem
+    top: 3rem
+    p
+        animation: textVisibility 3s ease-out 
+    &:hover
+        top: 1rem
+        right: -22rem
+        width: 40rem
+        transition: 1s
+        p
+            font-size: 2.3rem
+            transition: 1s
+
+
+// Анимации
+
+@keyframes textVisibility
+    0%
+        opacity: 0
+    100%
+        opacity: 1

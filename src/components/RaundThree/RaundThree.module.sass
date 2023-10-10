@@ -1,0 +1,217 @@
+// Первая фаза фон
+.backgraund
+    background-color: RosyBrown
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-items: center
+    height: 50rem
+
+// Вторая фаза фон
+.backgraundTwo
+    background-color: DarkRed
+    animation: backgraundTwoAnim 3s linear infinite
+
+// Первая фаза часть злодея   
+.rightPart
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: relative
+    width: 50rem
+    height: 40rem
+    animation: badRobot 5s linear infinite
+    img
+        width: 60rem
+        border-radius: 2rem
+        animation: badRobotImg 5s linear infinite
+
+// Вторая фаза часть злодея  
+.rightPartTwo
+    width: 70rem
+    height: 50rem
+    margin-top: 3rem
+    img
+        width: 70rem
+
+  
+.textBadRobot
+    animation: textVisibility 2s 
+    background-color: rgba(0, 0, 0, 0.755)
+    color: Brown
+    padding: 1rem
+    font-size: 2.5rem
+    text-shadow: 1px 1px 1px #000
+    position: absolute
+    width: 50rem
+    h3
+        font-size: 2.5rem
+
+// Финальная фаза злодея 
+.rightPartFinal
+    span
+        color: green
+    img
+        animation: none !important
+        filter: hue-rotate(0deg) saturate(1000%)
+        box-shadow: 0px 0px 25px 12px rgba(0, 86, 184, 0.818)
+
+// Смерть главного босса
+.deadBoss
+    h3
+        padding-top: 9rem
+        font-size: 5rem
+    img
+        filter: brightness(0%) 
+
+    
+.leftPart
+    position: relative
+    width: 50rem
+
+// Первая фаза, текст бота
+.textBot 
+    padding: 1rem
+    font-size: 2rem
+    width: 30rem
+    background-color: white
+    border: .3rem solid black
+    border-radius: 0 2rem 2rem 2rem
+    position: absolute
+    right: 10rem
+    top: -28rem
+    z-index: 99
+    p
+       animation: textVisibility 3s ease-out 
+    &:hover
+        right: 5rem
+        font-size: 2.3rem
+        width: 35rem
+        transition: 1s
+
+.textBotInGame
+    padding: 1rem
+    font-size: 2rem
+    width: 30rem
+    background-color: white
+    border: .3rem solid black
+    border-radius: 0 2rem 2rem 2rem
+    position: absolute
+    right: 10rem
+    top: -17rem
+    z-index: 99
+    p
+       animation: textVisibility 3s ease-out 
+    &:hover
+        right: 5rem
+        font-size: 2.3rem
+        width: 35rem
+        transition: 1s
+
+// Вторая фаза, текст бота
+.textBotTwo 
+    padding: 1rem
+    font-size: 2rem
+    width: 30rem
+    background-color: white
+    border: .3rem solid black
+    border-radius: 0 2rem 2rem 2rem
+    position: absolute
+    right: 5rem
+    top: -28rem
+    z-index: 99
+    p
+       animation: textVisibility 3s ease-out 
+    &:hover
+        right: -1rem
+        font-size: 2.3rem
+        width: 35rem
+        transition: 1s
+
+.textBotInGameTwo
+    padding: 1rem
+    font-size: 2rem
+    width: 30rem
+    background-color: white
+    border: .3rem solid black
+    border-radius: 0 2rem 2rem 2rem
+    position: absolute
+    right: 5rem
+    top: -17rem
+    z-index: 99
+    p
+       animation: textVisibility 3s ease-out 
+    &:hover
+        right: 1rem
+        font-size: 2.3rem
+        width: 35rem
+        transition: 1s
+
+// Начальное поле ответов
+.gameField
+    border-radius: 2rem
+    margin: 2rem
+    h2
+        background: linear-gradient(317deg, rgba(159,159,159,0.9010197829131653) 0%, rgba(1,255,237,0.8057816876750701) 100%)
+        font-size: 3rem
+        border: .3rem solid black
+        border-radius: 2rem
+        padding: 1rem
+        cursor: pointer
+        &:hover
+            border: 1rem solid Goldenrod
+            border-radius: 2rem
+            transition: 1s
+
+// Финальное поле ответов
+.gameFieldFinal
+    border-radius: 2rem
+    margin: 2rem
+    h2
+        background-color: black
+        font-size: 3rem
+        border: .3rem solid LightCyan
+        color: LightCyan
+        border-radius: 2rem
+        padding: 1rem
+        cursor: pointer
+        span
+            color: green
+        &:hover
+            border: 1rem solid red
+            border-radius: 2rem
+            transition: 1s
+
+
+// Анимации
+
+@keyframes textVisibility
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+
+@keyframes badRobot
+    0%
+        transform: translate(0rem, 4rem)
+    50%
+        transform: translate(0rem , 0rem)
+    100%
+        transform: translate(0rem , 4rem)
+
+@keyframes badRobotImg
+    0%
+        filter: hue-rotate(360deg)
+    50%
+        filter: hue-rotate(0deg)
+    100%
+        filter: hue-rotate(360deg)
+
+@keyframes backgraundTwoAnim
+    0%
+        filter: hue-rotate(30deg)
+    50%
+        filter: hue-rotate(0deg)
+    100%
+        filter: hue-rotate(30deg)
+    
