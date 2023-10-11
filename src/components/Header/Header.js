@@ -28,7 +28,7 @@ function Header({
             buttle >= 27 ? styles.playerInfoFinalButtle : ''
           } ${buttle >= 38 ? styles.playerInfoFinal : ''}`}
         >
-          {raund === 4 ? (
+          {buttle >= 38 ? (
             <div className={styles.textBot}>
               Я кстати жив ! Думаешь кто помог тебе в конце а ?! Когда он меня
               отключил, а ты продолжил давать верные ответы - мои системы начали
