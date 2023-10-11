@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-game/static/css/main.ccdcbf47.css",
-    "main.js": "/react-game/static/js/main.2e636f1e.js",
+    "main.js": "/react-game/static/js/main.734bd1a8.js",
     "static/js/845.6d46cffa.chunk.js": "/react-game/static/js/845.6d46cffa.chunk.js",
     "static/media/sound.mp3": "/react-game/static/media/sound.433c3cdd10f3b14eadf6.mp3",
     "static/media/goodFinal.mp3": "/react-game/static/media/goodFinal.99a509d97725481ea319.mp3",
@@ -18,11 +18,11 @@
     "static/media/soundButton.mp3": "/react-game/static/media/soundButton.e1ffd2e4262dfbca0d4c.mp3",
     "index.html": "/react-game/index.html",
     "main.ccdcbf47.css.map": "/react-game/static/css/main.ccdcbf47.css.map",
-    "main.2e636f1e.js.map": "/react-game/static/js/main.2e636f1e.js.map",
+    "main.734bd1a8.js.map": "/react-game/static/js/main.734bd1a8.js.map",
     "845.6d46cffa.chunk.js.map": "/react-game/static/js/845.6d46cffa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ccdcbf47.css",
-    "static/js/main.2e636f1e.js"
+    "static/js/main.734bd1a8.js"
   ]
 }
