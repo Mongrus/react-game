@@ -58,7 +58,7 @@ function Header({
       )}
       {/* <Button onClick={raundPlus}>Пойти дальше</Button> */}
       {raund === 2 ? (
-        <Button onClick={raunMinus}>Вернуться и выбрать другово бота</Button>
+        <Button onClick={raunMinus}>Вернуться и выбрать другого бота</Button>
       ) : (
         <></>
       )}

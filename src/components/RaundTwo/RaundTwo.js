@@ -18,8 +18,8 @@ function RaundTwo({ infoPlayer, startThreeRaund, textBot, namePlayer }) {
           (textBot === 1 && randNum === 2 && (
             <div className={styles.textBot}>
               <p>
-                Что-то я побаиваюсь этого злового духа... Надеюсь {namePlayer}{' '}
-                ты знаешь что делаешь !
+                Что-то я побаиваюсь этого злово духа... Надеюсь {namePlayer} ты
+                знаешь что делаешь !
               </p>
             </div>
           )) ||
