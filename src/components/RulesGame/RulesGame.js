@@ -1,7 +1,7 @@
 import Button from '../RaundOne/Button';
 import styles from './RulesGame.module.sass';
 
-function RulesGame({ raundPlus, setNamePlayer, checkName }) {
+function RulesGame({ raundPlus, setNamePlayer, checkName, newGameClick }) {
   return (
     <div className={styles.backgraund}>
       <div className={styles.rules}>
@@ -25,7 +25,14 @@ function RulesGame({ raundPlus, setNamePlayer, checkName }) {
           набрать в течении 10 вопросов как можно больше очков. Ладно давай так,
           четкая цель в 100 очков и ты его победил. Удачи !
         </h3>
-        <Button onClick={checkName}>Если ты готов(а) ЖМИ!!!</Button>
+        <Button
+          onClick={() => {
+            checkName();
+            newGameClick();
+          }}
+        >
+          Если ты готов(а) ЖМИ!!!
+        </Button>
       </div>
     </div>
   );

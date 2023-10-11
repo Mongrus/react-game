@@ -89,7 +89,6 @@ function App() {
 
   const buttlePlusRaund = () => {
     setButtle(buttle + 1);
-    console.log(`Этап битвы ${buttle}`);
   };
 
   const correctAnswer = () => {
@@ -109,11 +108,17 @@ function App() {
 
   const Click = () => {
     setClickSound(!clickSound);
-    console.log(clickSound);
     if (clickSound === true) {
       play();
     } else if (clickSound === false) {
       stopSound();
+    }
+  };
+
+  const newGameClick = () => {
+    if (clickSound === true) {
+      setClickSound(false);
+      play();
     }
   };
 
@@ -165,6 +170,7 @@ function App() {
       />
       {(raund === 0 && (
         <RulesGame
+          newGameClick={newGameClick}
           checkName={checkName}
           setNamePlayer={setNamePlayer}
           raundPlus={raundPlus}

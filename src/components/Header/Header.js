@@ -37,13 +37,15 @@ function Header({
         <></>
       )}
       {(raund === 3 && <h2>Очки: {playerPoints}</h2>) || (raund === 4 && <></>)}
-      <Sound
-        clickSound={clickSound}
-        Click={Click}
-        volumePlus={volumePlus}
-        volumeMinus={volumeMinus}
-        className={styles.sound}
-      />
+      {(raund === 4 && <></>) || (
+        <Sound
+          clickSound={clickSound}
+          Click={Click}
+          volumePlus={volumePlus}
+          volumeMinus={volumeMinus}
+          className={styles.sound}
+        />
+      )}
       {/* <Button onClick={raundPlus}>Пойти дальше</Button> */}
       {raund === 2 ? (
         <Button onClick={raunMinus}>Вернуться и выбрать другово бота</Button>
