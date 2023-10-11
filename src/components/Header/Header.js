@@ -28,6 +28,16 @@ function Header({
             buttle >= 27 ? styles.playerInfoFinalButtle : ''
           } ${buttle >= 38 ? styles.playerInfoFinal : ''}`}
         >
+          {raund === 4 ? (
+            <div className={styles.textBot}>
+              Я кстати жив ! Думаешь кто помог тебе в конце а ?! Когда он меня
+              отключил, а ты продолжил давать верные ответы - мои системы начали
+              приходит в норму и я нашел его слабое место ! ЭТО БЫЛО ПОТРЯСНО
+              !!!
+            </div>
+          ) : (
+            <></>
+          )}
           <img src={infoPlayer.avatar} alt="#" />
           <h3>
             {infoPlayer.first_name} {infoPlayer.last_name}

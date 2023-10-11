@@ -7,12 +7,6 @@ function Final({ buttle, namePlayer, infoPlayer, playerPoints }) {
       {buttle === 38 ? (
         <div className={styles.goodFinal}>
           <div className={styles.goodFinalDiv}>
-            <div className={styles.textBot}>
-              Я кстати жив ! Думаешь кто помог тебе в конце а ?! Когда он меня
-              отключил, а ты продолжил давать верные ответы - мои системы начали
-              приходит в норму и я нашел его слабое место ! ЭТО БЫЛО ПОТРЯСНО
-              !!!
-            </div>
             <h2>
               Победа была одержана {namePlayer} ! ПОЗДРАВЛЯЮ !!! Количество
               набранных тобой очков: {playerPoints}. Этого хватило что бы
