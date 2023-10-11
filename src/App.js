@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.sass';
 import useSound from 'use-sound';
 import RulesGame from './components/RulesGame/RulesGame';
@@ -8,6 +8,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import RaundThree from './components/RaundThree/RaundThree';
 import Final from './components/Final/Final';
+import Loading from './components/Loading/Loading';
 import badRobotMainText from './sounds/badRobotMainText.mp3';
 import botMainText from './sounds/botMainText.mp3';
 import sound from './sounds/sound.mp3';
@@ -26,6 +27,7 @@ function App() {
   const [playGoodText] = useSound(botMainText);
   const [clickSound, setClickSound] = useState(true);
   const [volume, setVolume] = useState(0.3);
+  const [loading, setLoading] = useState(false);
   const [play, { stop: stopSound }] = useSound(sound, {
     volume,
   });
@@ -35,6 +37,13 @@ function App() {
   const [playbadFinal, { stop: stopbadFinal }] = useSound(badFinalSound, {
     volume,
   });
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 15000);
+  }, []);
 
   const twoRaundStart = (...info) => {
     const infoPlayer = {
@@ -168,14 +177,17 @@ function App() {
         infoPlayer={infoPlayer}
         stopFinalTheme={stopFinalTheme}
       />
-      {(raund === 0 && (
-        <RulesGame
-          newGameClick={newGameClick}
-          checkName={checkName}
-          setNamePlayer={setNamePlayer}
-          raundPlus={raundPlus}
-        ></RulesGame>
-      )) ||
+      {loading ? (
+        <Loading />
+      ) : (
+        (raund === 0 && (
+          <RulesGame
+            newGameClick={newGameClick}
+            checkName={checkName}
+            setNamePlayer={setNamePlayer}
+            raundPlus={raundPlus}
+          ></RulesGame>
+        )) ||
         (raund === 1 && <RaundOne twoRaundStart={twoRaundStart} />) ||
         (raund === 2 && (
           <RaundTwo
@@ -206,7 +218,9 @@ function App() {
             infoPlayer={infoPlayer}
             playerPoints={playerPoints}
           />
-        ))}
+        ))
+      )}
+
       <Footer buttle={buttle} />
     </div>
   );
