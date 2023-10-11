@@ -47,7 +47,7 @@ function Header({
         <></>
       )}
       {(raund === 3 && <h2>Очки: {playerPoints}</h2>) || (raund === 4 && <></>)}
-      {(raund === 4 && <></>) || (
+      {(buttle === 38 && <></>) || (
         <Sound
           clickSound={clickSound}
           Click={Click}
