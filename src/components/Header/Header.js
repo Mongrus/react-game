@@ -28,7 +28,7 @@ function Header({
             buttle >= 27 ? styles.playerInfoFinalButtle : ''
           } ${buttle >= 38 ? styles.playerInfoFinal : ''}`}
         >
-          {buttle >= 38 ? (
+          {buttle === 38 && raund === 4 ? (
             <div className={styles.textBot}>
               Я кстати жив ! Думаешь кто помог тебе в конце а ?! Когда он меня
               отключил, а ты продолжил давать верные ответы - мои системы начали
@@ -47,7 +47,7 @@ function Header({
         <></>
       )}
       {(raund === 3 && <h2>Очки: {playerPoints}</h2>) || (raund === 4 && <></>)}
-      {(buttle === 38 && <></>) || (
+      {(raund === 4 && <></>) || (
         <Sound
           clickSound={clickSound}
           Click={Click}
